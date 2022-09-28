@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troque a cor de background</title>
+</head>
+<body>
+    <label for="cor"><b>Selecione uma opção:</b></label>
+    <select name="cor" id="cor">
+        <option class="opt" value="White">Selecione a cor</option>
+        <option class="opt" value="Verde">Verde</option>
+        <option class="opt" value="Azul">Azul</option>
+        <option class="opt" value="Amarelo">Amarelo</option>
+        <option class="opt" value="Vermelho">Vermelho</option>
+    </select>
+
+    <script>
+        let opt = document.querySelectorAll(".opt");
+        let teste = document.querySelector("#cor");
+        let body = document.body;
+
+        body.style.background = "white";
+
+        cor.onclick =() => {
+            if (opt[0].selected) {
+                body.style.background = "white";
+            }
+            else if (opt[1].selected) {
+                body.style.background = "green";
+            }
+
+            else if (opt[2].selected) {
+                body.style.background = "blue";
+            }
+
+            else if (opt[4].selected) {
+                body.style.background = "red";
+            }
+
+            else if (opt[3].selected) {
+                body.style.background = "yellow";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
